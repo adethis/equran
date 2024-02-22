@@ -1,0 +1,336 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: $bg-background;
+}
+
+.main {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
+    img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .header-title {
+        color: $primary;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.onboarding {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+
+    .onboarding-title {
+        color: $primary;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .onboarding-description {
+        color: $text-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .onboarding-image {
+        width: 314px;
+        height: 450px;
+    }
+}
+
+.btn {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 38px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &.btn-secondary {
+        background-color: $secondary;
+        color: $white;
+
+        &:hover {
+            background-color: darken($secondary, 10%);
+        }
+    }
+
+    &.btn-absolute {
+        position: absolute;
+        bottom: -1rem;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 24px 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    .title-greeting {
+        color: $text-secondary;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(214.81328040361404, 120.85902035236359, 250.54247438907623) 0%, rgb(144.00000661611557, 85.0000025331974, 255) 100%);
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex: 1;
+
+        img,
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        span {
+            color: $white;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .banner-heading {
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .banner-description {
+            color: $white;
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+
+    .image-banner {
+        width: 160px;
+        object-fit: contain;
+    }
+
+    &.banner-detail {
+        background: url(../img/img-banner.png), linear-gradient(180deg, rgb(214.81328040361404, 120.85902035236359, 250.54247438907623) 0%, rgb(144.00000661611557, 85.0000025331974, 255) 100%);
+        background-position: bottom right, center;
+        background-size: 140px 100px, cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        height: 240px;
+
+        .banner-text {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-bismillah {
+            width: 214px;
+            height: 48px;
+        }
+    }
+}
+
+.tab {
+    display: flex;
+    gap: 18px;
+    border-bottom: 2px solid $line-color;
+
+    a {
+        color: $text-secondary;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none;
+        padding: 0 8px 8px;
+
+        &.active {
+            color: $primary;
+            font-weight: 600;
+            border-bottom: 2px solid $primary;
+        }
+    }
+}
+
+.list-surah {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .item-surah {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $line-color;
+        text-decoration: none;
+        cursor: pointer;
+
+        .surah-text {
+            display: flex;
+            gap: 12px;
+
+            .surah-ayat {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .surah-number {
+                background: url(../img/bg-number.svg);
+                background-size: contain;
+                background-position: center;
+                color: $text-primary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 500;
+                width: 32px;
+                height: 32px;
+            }
+
+            .ayat-title {
+                color: $text-primary;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+
+            .ayat-description {
+                color: $text-secondary;
+                display: flex;
+                gap: 4px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        .surah-arab {
+            color: $primary;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.list-ayat {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .ayat-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .ayat-header {
+            background-color: #F3F3F5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 13px;
+            border-radius: 10px;
+
+            .ayat-number {
+                background-color: $primary;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: 500;
+                width: 24px;
+                height: 24px;
+                border-radius: 50px;
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .ayat-body {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 16px;
+
+            .ayat-arabic {
+                color: $text-primary;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: right;
+                line-height: 3;
+                margin-bottom: 0;
+            }
+            .ayat-translate {
+                color: $text-primary;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: right;
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.divider {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    margin: 10px 0;
+    height: 1px;
+    width: 100%;
+}
