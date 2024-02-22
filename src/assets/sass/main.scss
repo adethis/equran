@@ -245,7 +245,8 @@ body {
             .ayat-description {
                 color: $text-secondary;
                 display: flex;
-                gap: 4px;
+                align-items: center;
+                gap: 6px;
                 font-size: 12px;
                 font-weight: 400;
             }
@@ -333,4 +334,11 @@ body {
     margin: 10px 0;
     height: 1px;
     width: 100%;
+}
+
+.circle-divider {
+    background-color: #E7EAEE;
+    display: block;
+    width: 4px;
+    height: 4px;
 }

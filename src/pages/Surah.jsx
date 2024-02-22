@@ -40,7 +40,6 @@ function Surah() {
                         <img src={imgBismillah} className='img-bismillah' alt='bismillah' />
                     </div>
                 </div>
-                <Tab />
                 <div className='list-ayat'>
                     {
                                 isLoading

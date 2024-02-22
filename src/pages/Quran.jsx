@@ -55,9 +55,9 @@ function Quran() {
                                             <div className="surah-ayat">
                                                 <span className="ayat-title">{data.namaLatin}</span>
                                                 <div className='ayat-description'>
-                                                    <span>Meccaan</span>
-                                                    <span></span>
-                                                    <span>7 Verses</span>
+                                                    <span>{data.arti}</span>
+                                                    <span className='circle-divider'></span>
+                                                    <span>{data.jumlahAyat} Ayat</span>
                                                 </div>
                                             </div>
                                         </div>
