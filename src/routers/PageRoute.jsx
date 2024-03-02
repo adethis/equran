@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    BrowserRouter,
+    HashRouter,
     Routes,
     Route,
 } from 'react-router-dom'
@@ -10,13 +10,13 @@ import Surah from '../pages/Surah'
 
 const PageRoute = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
-                <Route path='/' element={<Onboarding />} />
+                <Route exact path='/' element={<Onboarding />} />
                 <Route path='/quran' element={<Quran />} />
                 <Route path='/surah/:id' element={<Surah />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
