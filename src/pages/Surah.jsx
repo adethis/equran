@@ -1,5 +1,4 @@
 import Header from '../components/Header'
-import Tab from '../components/Tab'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getDetailSurah } from '../repository/SurahRepository'

@@ -7,6 +7,7 @@ import {
 import Onboarding from '../pages/Onboarding'
 import Quran from '../pages/Quran'
 import Surah from '../pages/Surah'
+import Tafsir from '../pages/Tafsir'
 
 const PageRoute = () => {
     return (
@@ -15,6 +16,7 @@ const PageRoute = () => {
                 <Route exact path='/' element={<Onboarding />} />
                 <Route path='/quran' element={<Quran />} />
                 <Route path='/surah/:id' element={<Surah />} />
+                <Route path='/tafsir' element={<Tafsir />} />
             </Routes>
         </HashRouter>
     )

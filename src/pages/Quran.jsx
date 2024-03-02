@@ -42,7 +42,7 @@ function Quran() {
                     </div>
                     <img src={bannerImg} className='image-banner' alt='banner' />
                 </div>
-                <Tab />
+                <Tab path='quran' />
                 <div className="list-surah">
                     {
                             isLoading
